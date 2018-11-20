@@ -9,18 +9,15 @@
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
 	CURLOPT_POSTFIELDS => "{\"name\": \"" + $_POST["name"] + "\",
-		\"customerGroup\": {\"customerGroupNumber\": 1\n    },
+		\"customerGroup\": {\"customerGroupNumber\": 1 },
 		\"currency\": \"DKK\",
 		\"paymentTerms\": {
-			\"properties\": {
-				\"paymentTermsNumber\": {},
-				\"self\": {}\n        }
+				\"paymentTermsNumber\": 1,
+				\"self\": ''
 			},
 		\"vatZone\": {
-			\"properties\": {
-				\"vatZoneNumber\": {},
-				\"self\": {}
-			}
+				\"vatZoneNumber\": 1,
+				\"self\": ''
 		}
 	}",
 	CURLOPT_HTTPHEADER => array(
