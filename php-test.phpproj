@@ -21,4 +21,7 @@
     <Compile Include="index.php" />
     <Compile Include="test.php" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="cacert.pem" />
+  </ItemGroup>
 </Project>
